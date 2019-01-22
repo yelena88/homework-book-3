@@ -1,0 +1,44 @@
+
+body {
+  font: 11pt Verdana;
+  min-width: 550px
+}
+
+H1 {
+  text-align: center
+}
+
+fieldset {
+  background-color: #DEF
+}
+
+input {
+  border-radius: 7px;
+  border-width: 3px;
+  border-color: #05A;
+  margin: 2px
+}
+
+input:focus:not([id^="button_"]) {
+  background-color: #06A;
+  color: #FFF;
+  border: outset #FF0;
+  box-shadow: 4px 4px 6px #222
+}
+
+input:focus + label {
+  font-weight: bold;
+  text-decoration: underline
+}
+
+#button_send:hover {
+  background-color: #5F5;
+  border: outset #0A0;
+  box-shadow: 4px 4px 6px #222
+}
+
+#button_reset:hover {
+  background-color: #F55;
+  border: outset #A00;
+  box-shadow: 4px 4px 6px #222
+}
