@@ -8,6 +8,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * Задание 10
+ * Создать форму с вводом имени, телефона и электронной почты.
+ * Создать сервлет, который будет получать эти данные, и распечатывать на странице.
+ * Если пользователь не ввел имя, или одновременно пропущены телефон и электронная почта,
+ * следует выводить сообщение об ошибке.
+ */
+
 @WebServlet("/formHandler")
 public class FormHandler extends HttpServlet {
   @Override

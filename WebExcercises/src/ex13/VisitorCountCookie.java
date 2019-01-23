@@ -7,7 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-
+/**
+ * Задание 13.
+ * Изменить счетчик из задания 9 так, чтобы подсчитывались только уникальные посещения за сутки.
+ * Для контроля, был ли данный пользователь в течение последних суток на сайте использовать куки.
+ */
 @WebServlet("/visitorCountCookie")
 public class VisitorCountCookie extends HttpServlet {
   private int visitorCount = 1;

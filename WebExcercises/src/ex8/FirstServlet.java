@@ -8,6 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/*
+Задание 8
+Набрать приведенный пример, откомпилировать его, разместить на сервере
+(в т.ч. зарегистрировать в web.xml) и запустить из браузера
+*/
+
 @WebServlet("/firstServlet")
 public class FirstServlet extends HttpServlet {
   public static final long serialVersionUID = 1L;

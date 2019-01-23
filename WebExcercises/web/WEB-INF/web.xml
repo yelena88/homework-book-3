@@ -35,9 +35,44 @@
         </init-param>
     </servlet>
 
+    <servlet>
+        <servlet-name>JDBCServletJSP</servlet-name>
+        <servlet-class>ex15.JDBCServletJSP</servlet-class>
+        <init-param>
+            <param-name>dbUrl</param-name>
+            <param-value>
+                jdbc:mysql://localhost:3306/listexpenses?useSSL=false&amp;allowPublicKeyRetrieval=true
+            </param-value>
+        </init-param>
+        <init-param>
+            <param-name>jdbcDriver</param-name>
+            <param-value>com.mysql.cj.jdbc.Driver</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbUsername</param-name>
+            <param-value>dev</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbPassword</param-name>
+            <param-value>r0man88</param-value>
+        </init-param>
+        <init-param>
+            <param-name>sqlShowQuery</param-name>
+            <param-value>
+                SELECT expenses.num, paydate, value, name
+                FROM   expenses, receivers
+                WHERE  receiver=receivers.num
+            </param-value>
+        </init-param>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>JDBCServlet</servlet-name>
         <url-pattern>/jdbc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JDBCServletJSP</servlet-name>
+        <url-pattern>/jdbc-jsp</url-pattern>
     </servlet-mapping>
 
 </web-app>

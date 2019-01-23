@@ -5,6 +5,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 
+/*
+Задание 7
+Создайте объект DAO на основе интерфейса приведенного выше
+Также необходимо создать классы Receiver и Expense, свойства которых соответствуют
+полям таблиц базы данных расходов. Поле дата в классах можно хранить в виде строки.
+*/
 public class Main {
   public static void main(String[] args) {
 

@@ -7,6 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
+/*
+Задание 9
+Сделайте простейший сервлет, подсчитывающий количество посещений. Т.е. при каждом обращении к сервлету, следует
+увеличивать счетчик посещений, и выводить его значение на страницу. Количество следует хранить в файле.
+ */
 @WebServlet("/visitorCount")
 public class VisitorCount extends HttpServlet {
   private static final String VISITOR_COUNT_FILE =

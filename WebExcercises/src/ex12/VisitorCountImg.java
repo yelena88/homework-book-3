@@ -11,6 +11,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 
+/* Задание  12. Изменить счетчик из задания 9 так, чтобы значение выводилось в виде изображения. */
 @WebServlet("/visitorCountImage")
 public class VisitorCountImg extends HttpServlet {
   private static final String VISITOR_COUNT_FILE =
