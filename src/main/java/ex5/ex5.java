@@ -42,7 +42,8 @@ public class ex5 {
       receiverId = args[1];
       value = args[2];
     } catch (ArrayIndexOutOfBoundsException e) {
-      System.out.println("Please execute the program with all argument in the form of: ex4 (date) (receiver) (value)");
+      System.out.println(
+              "Please execute the program with all argument in the form of: ex4 (date) (receiver) (value)");
     }
 
     if (date == null || receiverId == null || value == null)
