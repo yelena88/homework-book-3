@@ -1,11 +1,13 @@
 package ex9;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
+@WebServlet("/visitorCount")
 public class VisitorCount extends HttpServlet {
   private static final String VISITOR_COUNT_FILE =
           "C:\\Users\\User\\IdeaProjects\\HomeworkBook3\\WebExcercises\\src\\ex9\\visitor.dat";

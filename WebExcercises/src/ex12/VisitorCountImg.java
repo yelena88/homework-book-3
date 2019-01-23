@@ -3,6 +3,7 @@ package ex12;
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -10,6 +11,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 
+@WebServlet("/visitorCountImage")
 public class VisitorCountImg extends HttpServlet {
   private static final String VISITOR_COUNT_FILE =
           "C:\\Users\\User\\IdeaProjects\\HomeworkBook3\\WebExcercises\\src\\ex9\\visitor.dat";

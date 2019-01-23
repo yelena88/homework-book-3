@@ -5,12 +5,14 @@ package ex11;
 Приветствую пользователя Firefox. */
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet("/userAgent")
 public class UserAgent extends HttpServlet {
   private static final String[] KNOWN_BROWSERS = {"Chrome", "Firefox", "Opera", "Yandex", "Internet Explorer", "IE", "Safari", "Netscape", "Konqueror", "SeaMonkey", "Minefield", "Maxthon", "K-Meleon", "Iceweasel", "Camino", "Edge"};
   private static final String GREETING_PAGE_PREFIX = "<!DOCTYPE html><html><head lang=\"ru\"><meta charset=\"UTF-8\"><title>Приветствие</title></head><body><h1>Приветствую пользователя ";
