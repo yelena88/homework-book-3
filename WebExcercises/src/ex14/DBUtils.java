@@ -3,7 +3,7 @@ package ex14;
 import java.sql.*;
 
 public class DBUtils {
-  static Connection getDBConnection(String driver, String url, String user, String password) throws ClassNotFoundException, SQLException {
+  public static Connection getDBConnection(String driver, String url, String user, String password) throws ClassNotFoundException, SQLException {
     Class.forName(driver);
     return DriverManager.getConnection(url, user, password);
   }
@@ -21,7 +21,7 @@ public class DBUtils {
     }
   }
 
-  static void closeDBConnection(Connection connection, Statement statement, ResultSet resultSet) {
+  public static void closeDBConnection(Connection connection, Statement statement, ResultSet resultSet) {
     try {
       if (connection != null) {
         connection.close();
